@@ -1,4 +1,4 @@
-# 通过s3接口实现文件上传到ceph 存储
+# 通过librados接口实现文件上传到ceph 存储
 
 # 背景
 ## client
