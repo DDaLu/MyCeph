@@ -7,7 +7,6 @@ go build client.go
 - 客户端
 ```shell script
 $ ./client ~/Desktop/pcbook.png
-
 upload file: /Users/dovefi/Desktop/pcbook.png success
 ```
 - 服务端输出
