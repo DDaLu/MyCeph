@@ -1,0 +1,841 @@
+# begin crush map
+tunable choose_local_tries 0
+tunable choose_local_fallback_tries 0
+tunable choose_total_tries 50
+tunable chooseleaf_descend_once 1
+tunable chooseleaf_vary_r 1
+tunable chooseleaf_stable 1
+tunable straw_calc_version 1
+tunable allowed_bucket_algs 54
+
+# devices
+device 0 osd.0 class hdd
+device 1 osd.1 class hdd
+device 2 osd.2 class hdd
+device 3 osd.3 class hdd
+device 4 osd.4 class hdd
+device 5 osd.5 class hdd
+device 6 osd.6 class hdd
+device 7 osd.7 class hdd
+device 8 osd.8 class hdd
+device 9 osd.9 class hdd
+device 10 osd.10 class hdd
+device 11 osd.11 class hdd
+device 12 osd.12 class hdd
+device 13 osd.13 class hdd
+device 14 osd.14 class hdd
+device 15 osd.15 class hdd
+device 16 osd.16 class hdd
+device 17 osd.17 class hdd
+device 18 osd.18 class hdd
+device 19 osd.19 class hdd
+device 20 osd.20 class hdd
+device 21 osd.21 class hdd
+device 22 osd.22 class hdd
+device 23 osd.23 class hdd
+device 24 osd.24 class hdd
+device 25 osd.25 class hdd
+device 26 osd.26 class hdd
+device 27 osd.27 class hdd
+device 28 osd.28 class hdd
+device 29 osd.29 class hdd
+device 30 osd.30 class hdd
+device 31 osd.31 class hdd
+device 32 osd.32 class hdd
+device 33 osd.33 class hdd
+device 34 osd.34 class hdd
+device 35 osd.35 class hdd
+device 36 osd.36 class hdd
+device 37 osd.37 class hdd
+device 38 osd.38 class hdd
+device 39 osd.39 class hdd
+device 40 osd.40 class hdd
+device 41 osd.41 class hdd
+device 42 osd.42 class hdd
+device 43 osd.43 class hdd
+device 44 osd.44 class hdd
+device 45 osd.45 class hdd
+device 46 osd.46 class hdd
+device 47 osd.47 class hdd
+device 48 osd.48 class hdd
+device 49 osd.49 class hdd
+device 50 osd.50 class hdd
+device 51 osd.51 class hdd
+device 52 osd.52 class hdd
+device 53 osd.53 class hdd
+device 54 osd.54 class hdd
+device 55 osd.55 class hdd
+device 56 osd.56 class hdd
+device 57 osd.57 class hdd
+device 58 osd.58 class hdd
+device 59 osd.59 class hdd
+device 60 osd.60 class hdd
+device 61 osd.61 class hdd
+device 62 osd.62 class hdd
+device 63 osd.63 class hdd
+device 64 osd.64 class hdd
+device 65 osd.65 class hdd
+device 66 osd.66 class hdd
+device 67 osd.67 class hdd
+device 68 osd.68 class hdd
+device 69 osd.69 class hdd
+device 70 osd.70 class hdd
+device 71 osd.71 class hdd
+device 72 osd.72 class hdd
+device 73 osd.73 class hdd
+device 74 osd.74 class hdd
+device 75 osd.75 class hdd
+device 76 osd.76 class hdd
+device 77 osd.77 class hdd
+device 78 osd.78 class hdd
+device 79 osd.79 class hdd
+device 80 osd.80 class hdd
+device 81 osd.81 class hdd
+device 82 osd.82 class hdd
+device 83 osd.83 class hdd
+device 84 osd.84 class hdd
+device 85 osd.85 class hdd
+device 86 osd.86 class hdd
+device 87 osd.87 class hdd
+device 88 osd.88 class hdd
+device 89 osd.89 class hdd
+device 90 osd.90 class hdd
+device 91 osd.91 class hdd
+device 92 osd.92 class hdd
+device 93 osd.93 class hdd
+device 94 osd.94 class hdd
+device 95 osd.95 class hdd
+device 96 osd.96 class hdd
+device 97 osd.97 class hdd
+device 98 osd.98 class hdd
+device 99 osd.99 class hdd
+device 100 osd.100 class hdd
+device 101 osd.101 class hdd
+device 102 osd.102 class hdd
+device 103 osd.103 class hdd
+device 104 osd.104 class hdd
+device 105 osd.105 class hdd
+device 106 osd.106 class hdd
+device 107 osd.107 class hdd
+device 108 osd.108 class hdd
+device 109 osd.109 class hdd
+device 110 osd.110 class hdd
+device 111 osd.111 class hdd
+device 112 osd.112 class hdd
+device 113 osd.113 class hdd
+device 114 osd.114 class hdd
+device 115 osd.115 class hdd
+device 116 osd.116 class hdd
+device 117 osd.117 class hdd
+device 118 osd.118 class hdd
+device 119 osd.119 class hdd
+device 120 osd.120 class hdd
+device 121 osd.121 class hdd
+device 122 osd.122 class hdd
+device 123 osd.123 class hdd
+device 124 osd.124 class hdd
+device 125 osd.125 class hdd
+device 126 osd.126 class hdd
+device 127 osd.127 class hdd
+device 128 osd.128 class hdd
+device 129 osd.129 class hdd
+device 130 osd.130 class hdd
+device 131 osd.131 class hdd
+device 132 osd.132 class hdd
+device 133 osd.133 class hdd
+device 134 osd.134 class hdd
+device 135 osd.135 class hdd
+device 136 osd.136 class hdd
+device 137 osd.137 class hdd
+device 138 osd.138 class hdd
+device 139 osd.139 class hdd
+device 140 osd.140 class hdd
+device 141 osd.141 class hdd
+device 142 osd.142 class hdd
+device 143 osd.143 class hdd
+device 144 osd.144 class hdd
+device 145 osd.145 class hdd
+device 146 osd.146 class hdd
+device 147 osd.147 class hdd
+device 148 osd.148 class hdd
+device 149 osd.149 class hdd
+device 150 osd.150 class hdd
+device 151 osd.151 class hdd
+device 152 osd.152 class hdd
+device 153 osd.153 class hdd
+device 154 osd.154 class hdd
+device 155 osd.155 class hdd
+device 156 osd.156 class hdd
+device 157 osd.157 class hdd
+device 158 osd.158 class hdd
+device 159 osd.159 class hdd
+device 160 osd.160 class hdd
+device 161 osd.161 class hdd
+device 162 osd.162 class hdd
+device 163 osd.163 class hdd
+device 164 osd.164 class hdd
+device 165 osd.165 class hdd
+device 166 osd.166 class hdd
+device 167 osd.167 class hdd
+device 168 osd.168 class hdd
+device 169 osd.169 class hdd
+device 170 osd.170 class hdd
+device 171 osd.171 class hdd
+device 172 osd.172 class hdd
+device 173 osd.173 class hdd
+device 174 osd.174 class hdd
+device 175 osd.175 class hdd
+device 176 osd.176 class hdd
+device 177 osd.177 class hdd
+device 178 osd.178 class hdd
+device 179 osd.179 class hdd
+device 180 osd.180 class hdd
+device 181 osd.181 class hdd
+device 182 osd.182 class hdd
+device 183 osd.183 class hdd
+device 184 osd.184 class hdd
+
+# types
+type 0 osd
+type 1 host
+type 2 chassis
+type 3 rack
+type 4 row
+type 5 pdu
+type 6 pod
+type 7 room
+type 8 datacenter
+type 9 zone
+type 10 region
+type 11 root
+
+# buckets
+host ceph-node110 {
+	id -21		# do not change unnecessarily
+	id -22 class hdd		# do not change unnecessarily
+	# weight 109.140
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.10 weight 10.914
+	item osd.111 weight 10.914
+	item osd.121 weight 10.914
+	item osd.130 weight 10.914
+	item osd.129 weight 10.914
+	item osd.133 weight 10.914
+	item osd.137 weight 10.914
+	item osd.141 weight 10.914
+	item osd.144 weight 10.914
+	item osd.149 weight 10.914
+}
+host ceph-node108 {
+	id -23		# do not change unnecessarily
+	id -24 class hdd		# do not change unnecessarily
+	# weight 87.312
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.13 weight 10.914
+	item osd.109 weight 10.914
+	item osd.119 weight 10.914
+	item osd.153 weight 10.914
+	item osd.162 weight 10.914
+	item osd.167 weight 10.914
+	item osd.171 weight 10.914
+	item osd.177 weight 10.914
+}
+host ceph-node111 {
+	id -25		# do not change unnecessarily
+	id -26 class hdd		# do not change unnecessarily
+	# weight 87.312
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.9 weight 10.914
+	item osd.110 weight 10.914
+	item osd.120 weight 10.914
+	item osd.150 weight 10.914
+	item osd.159 weight 10.914
+	item osd.179 weight 10.914
+	item osd.182 weight 10.914
+	item osd.184 weight 10.914
+}
+host ceph-node109 {
+	id -27		# do not change unnecessarily
+	id -28 class hdd		# do not change unnecessarily
+	# weight 87.312
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.12 weight 10.914
+	item osd.113 weight 10.914
+	item osd.122 weight 10.914
+	item osd.151 weight 10.914
+	item osd.157 weight 10.914
+	item osd.164 weight 10.914
+	item osd.169 weight 10.914
+	item osd.175 weight 10.914
+}
+host ceph-node107 {
+	id -29		# do not change unnecessarily
+	id -30 class hdd		# do not change unnecessarily
+	# weight 87.312
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.11 weight 10.914
+	item osd.117 weight 10.914
+	item osd.127 weight 10.914
+	item osd.152 weight 10.914
+	item osd.158 weight 10.914
+	item osd.180 weight 10.914
+	item osd.181 weight 10.914
+	item osd.183 weight 10.914
+}
+host ceph-node104 {
+	id -31		# do not change unnecessarily
+	id -32 class hdd		# do not change unnecessarily
+	# weight 87.312
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.18 weight 10.914
+	item osd.114 weight 10.914
+	item osd.123 weight 10.914
+	item osd.156 weight 10.914
+	item osd.161 weight 10.914
+	item osd.166 weight 10.914
+	item osd.172 weight 10.914
+	item osd.176 weight 10.914
+}
+host ceph-node101 {
+	id -33		# do not change unnecessarily
+	id -34 class hdd		# do not change unnecessarily
+	# weight 109.140
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.17 weight 10.914
+	item osd.118 weight 10.914
+	item osd.128 weight 10.914
+	item osd.138 weight 10.914
+	item osd.132 weight 10.914
+	item osd.135 weight 10.914
+	item osd.140 weight 10.914
+	item osd.143 weight 10.914
+	item osd.146 weight 10.914
+	item osd.148 weight 10.914
+}
+host ceph-node102 {
+	id -35		# do not change unnecessarily
+	id -36 class hdd		# do not change unnecessarily
+	# weight 87.312
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.15 weight 10.914
+	item osd.112 weight 10.914
+	item osd.124 weight 10.914
+	item osd.155 weight 10.914
+	item osd.160 weight 10.914
+	item osd.165 weight 10.914
+	item osd.170 weight 10.914
+	item osd.174 weight 10.914
+}
+host ceph-node105 {
+	id -37		# do not change unnecessarily
+	id -38 class hdd		# do not change unnecessarily
+	# weight 87.312
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.16 weight 10.914
+	item osd.115 weight 10.914
+	item osd.126 weight 10.914
+	item osd.154 weight 10.914
+	item osd.163 weight 10.914
+	item osd.168 weight 10.914
+	item osd.173 weight 10.914
+	item osd.178 weight 10.914
+}
+host ceph-node106 {
+	id -39		# do not change unnecessarily
+	id -40 class hdd		# do not change unnecessarily
+	# weight 109.140
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.14 weight 10.914
+	item osd.116 weight 10.914
+	item osd.125 weight 10.914
+	item osd.134 weight 10.914
+	item osd.131 weight 10.914
+	item osd.136 weight 10.914
+	item osd.139 weight 10.914
+	item osd.142 weight 10.914
+	item osd.145 weight 10.914
+	item osd.147 weight 10.914
+}
+root default {
+	id -1		# do not change unnecessarily
+	id -2 class hdd		# do not change unnecessarily
+	# weight 938.612
+	alg straw2
+	hash 0	# rjenkins1
+	item ceph-node110 weight 109.141
+	item ceph-node108 weight 87.313
+	item ceph-node111 weight 87.312
+	item ceph-node109 weight 87.313
+	item ceph-node107 weight 87.312
+	item ceph-node104 weight 87.313
+	item ceph-node101 weight 109.141
+	item ceph-node102 weight 87.313
+	item ceph-node105 weight 87.313
+	item ceph-node106 weight 109.141
+}
+host ceph-node119 {
+	id -3		# do not change unnecessarily
+	id -4 class hdd		# do not change unnecessarily
+	# weight 120.054
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.0 weight 10.914
+	item osd.19 weight 10.914
+	item osd.28 weight 10.914
+	item osd.47 weight 10.914
+	item osd.37 weight 10.914
+	item osd.46 weight 10.914
+	item osd.64 weight 10.914
+	item osd.73 weight 10.914
+	item osd.82 weight 10.914
+	item osd.91 weight 10.914
+	item osd.100 weight 10.914
+}
+host ceph-node118 {
+	id -5		# do not change unnecessarily
+	id -6 class hdd		# do not change unnecessarily
+	# weight 120.054
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.1 weight 10.914
+	item osd.20 weight 10.914
+	item osd.35 weight 10.914
+	item osd.54 weight 10.914
+	item osd.45 weight 10.914
+	item osd.63 weight 10.914
+	item osd.72 weight 10.914
+	item osd.81 weight 10.914
+	item osd.90 weight 10.914
+	item osd.99 weight 10.914
+	item osd.108 weight 10.914
+}
+host ceph-node117 {
+	id -7		# do not change unnecessarily
+	id -8 class hdd		# do not change unnecessarily
+	# weight 120.054
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.2 weight 10.914
+	item osd.22 weight 10.914
+	item osd.30 weight 10.914
+	item osd.50 weight 10.914
+	item osd.40 weight 10.914
+	item osd.58 weight 10.914
+	item osd.68 weight 10.914
+	item osd.77 weight 10.914
+	item osd.86 weight 10.914
+	item osd.95 weight 10.914
+	item osd.104 weight 10.914
+}
+host ceph-node116 {
+	id -9		# do not change unnecessarily
+	id -10 class hdd		# do not change unnecessarily
+	# weight 120.054
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.3 weight 10.914
+	item osd.23 weight 10.914
+	item osd.32 weight 10.914
+	item osd.49 weight 10.914
+	item osd.39 weight 10.914
+	item osd.59 weight 10.914
+	item osd.69 weight 10.914
+	item osd.78 weight 10.914
+	item osd.87 weight 10.914
+	item osd.96 weight 10.914
+	item osd.105 weight 10.914
+}
+host ceph-node113 {
+	id -11		# do not change unnecessarily
+	id -12 class hdd		# do not change unnecessarily
+	# weight 120.054
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.7 weight 10.914
+	item osd.24 weight 10.914
+	item osd.31 weight 10.914
+	item osd.51 weight 10.914
+	item osd.42 weight 10.914
+	item osd.60 weight 10.914
+	item osd.67 weight 10.914
+	item osd.76 weight 10.914
+	item osd.85 weight 10.914
+	item osd.93 weight 10.914
+	item osd.102 weight 10.914
+}
+host ceph-node115 {
+	id -13		# do not change unnecessarily
+	id -14 class hdd		# do not change unnecessarily
+	# weight 120.054
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.4 weight 10.914
+	item osd.25 weight 10.914
+	item osd.34 weight 10.914
+	item osd.53 weight 10.914
+	item osd.43 weight 10.914
+	item osd.62 weight 10.914
+	item osd.71 weight 10.914
+	item osd.80 weight 10.914
+	item osd.89 weight 10.914
+	item osd.98 weight 10.914
+	item osd.107 weight 10.914
+}
+host ceph-node120 {
+	id -15		# do not change unnecessarily
+	id -16 class hdd		# do not change unnecessarily
+	# weight 120.054
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.8 weight 10.914
+	item osd.27 weight 10.914
+	item osd.33 weight 10.914
+	item osd.52 weight 10.914
+	item osd.41 weight 10.914
+	item osd.57 weight 10.914
+	item osd.65 weight 10.914
+	item osd.74 weight 10.914
+	item osd.83 weight 10.914
+	item osd.92 weight 10.914
+	item osd.101 weight 10.914
+}
+host pceph-node114 {
+	id -17		# do not change unnecessarily
+	id -18 class hdd		# do not change unnecessarily
+	# weight 120.054
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.6 weight 10.914
+	item osd.26 weight 10.914
+	item osd.36 weight 10.914
+	item osd.55 weight 10.914
+	item osd.44 weight 10.914
+	item osd.61 weight 10.914
+	item osd.70 weight 10.914
+	item osd.79 weight 10.914
+	item osd.88 weight 10.914
+	item osd.97 weight 10.914
+	item osd.106 weight 10.914
+}
+host ceph-node112 {
+	id -19		# do not change unnecessarily
+	id -20 class hdd		# do not change unnecessarily
+	# weight 120.054
+	alg straw2
+	hash 0	# rjenkins1
+	item osd.5 weight 10.914
+	item osd.21 weight 10.914
+	item osd.29 weight 10.914
+	item osd.48 weight 10.914
+	item osd.38 weight 10.914
+	item osd.56 weight 10.914
+	item osd.66 weight 10.914
+	item osd.75 weight 10.914
+	item osd.84 weight 10.914
+	item osd.94 weight 10.914
+	item osd.103 weight 10.914
+}
+root root0 {
+	id -41		# do not change unnecessarily
+	id -42 class hdd		# do not change unnecessarily
+	# weight 1080.495
+	alg straw2
+	hash 0	# rjenkins1
+	item ceph-node120 weight 120.055
+	item ceph-node119 weight 120.055
+	item ceph-node118 weight 120.055
+	item ceph-node117 weight 120.055
+	item ceph-node116 weight 120.055
+	item ceph-node115 weight 120.055
+	item ceph-node113 weight 120.055
+	item ceph-node112 weight 120.055
+	item pceph-node114 weight 120.055
+}
+
+# rules
+rule replicated_rule {
+	id 0
+	type replicated
+	min_size 1
+	max_size 10
+	step take default
+	step chooseleaf firstn 0 type host
+	step emit
+}
+rule replicated_rule1 {
+	id 1
+	type replicated
+	min_size 1
+	max_size 10
+	step take root0
+	step chooseleaf firstn 0 type host
+	step emit
+}
+
+# choose_args
+choose_args 18446744073709551615 {
+  {
+    bucket_id -1
+    weight_set [
+      [ 109.140 87.312 87.312 87.312 87.312 87.312 109.140 87.312 87.312 109.140 ]
+    ]
+  }
+  {
+    bucket_id -2
+    weight_set [
+      [ 109.140 87.312 87.312 87.312 87.312 87.312 109.140 87.312 87.312 109.140 ]
+    ]
+  }
+  {
+    bucket_id -3
+    weight_set [
+      [ 10.789 12.327 14.056 9.233 11.278 11.567 10.211 16.759 11.709 10.238 9.134 ]
+    ]
+  }
+  {
+    bucket_id -4
+    weight_set [
+      [ 10.789 12.327 14.056 9.233 11.278 11.567 10.211 16.759 11.709 10.238 9.134 ]
+    ]
+  }
+  {
+    bucket_id -5
+    weight_set [
+      [ 10.308 10.535 10.830 9.110 14.127 10.675 9.249 10.243 14.295 9.814 10.646 ]
+    ]
+  }
+  {
+    bucket_id -6
+    weight_set [
+      [ 10.308 10.535 10.830 9.110 14.127 10.675 9.249 10.243 14.295 9.814 10.646 ]
+    ]
+  }
+  {
+    bucket_id -7
+    weight_set [
+      [ 12.482 6.959 11.559 9.503 10.182 10.372 10.221 10.990 12.244 8.100 8.571 ]
+    ]
+  }
+  {
+    bucket_id -8
+    weight_set [
+      [ 12.482 6.959 11.559 9.503 10.182 10.372 10.221 10.990 12.244 8.100 8.571 ]
+    ]
+  }
+  {
+    bucket_id -9
+    weight_set [
+      [ 13.584 9.960 8.551 14.710 13.871 8.121 9.191 12.376 9.419 9.924 12.379 ]
+    ]
+  }
+  {
+    bucket_id -10
+    weight_set [
+      [ 13.584 9.960 8.551 14.710 13.871 8.121 9.191 12.376 9.419 9.924 12.379 ]
+    ]
+  }
+  {
+    bucket_id -11
+    weight_set [
+      [ 10.144 11.947 13.033 9.887 13.292 11.231 12.269 8.911 11.956 10.369 15.193 ]
+    ]
+  }
+  {
+    bucket_id -12
+    weight_set [
+      [ 10.144 11.947 13.033 9.887 13.292 11.231 12.269 8.911 11.956 10.369 15.193 ]
+    ]
+  }
+  {
+    bucket_id -13
+    weight_set [
+      [ 8.923 9.581 13.511 8.975 14.811 9.240 12.526 9.705 13.812 13.085 9.361 ]
+    ]
+  }
+  {
+    bucket_id -14
+    weight_set [
+      [ 8.923 9.581 13.511 8.975 14.811 9.240 12.526 9.705 13.812 13.085 9.361 ]
+    ]
+  }
+  {
+    bucket_id -15
+    weight_set [
+      [ 11.228 11.099 9.235 10.830 13.659 9.950 12.584 9.616 9.604 12.173 14.446 ]
+    ]
+  }
+  {
+    bucket_id -16
+    weight_set [
+      [ 11.228 11.099 9.235 10.830 13.659 9.950 12.584 9.616 9.604 12.173 14.446 ]
+    ]
+  }
+  {
+    bucket_id -17
+    weight_set [
+      [ 9.887 10.049 9.929 10.666 7.062 7.242 9.516 9.884 9.176 11.756 11.190 ]
+    ]
+  }
+  {
+    bucket_id -18
+    weight_set [
+      [ 9.887 10.049 9.929 10.666 7.062 7.242 9.516 9.884 9.176 11.756 11.190 ]
+    ]
+  }
+  {
+    bucket_id -19
+    weight_set [
+      [ 10.930 12.149 12.354 11.398 10.454 10.134 8.312 11.173 9.475 9.752 11.421 ]
+    ]
+  }
+  {
+    bucket_id -20
+    weight_set [
+      [ 10.930 12.149 12.354 11.398 10.454 10.134 8.312 11.173 9.475 9.752 11.421 ]
+    ]
+  }
+  {
+    bucket_id -21
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -22
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -23
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -24
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -25
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -26
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -27
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -28
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -29
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -30
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -31
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -32
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -33
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -34
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -35
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -36
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -37
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -38
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -39
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -40
+    weight_set [
+      [ 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 10.914 ]
+    ]
+  }
+  {
+    bucket_id -41
+    weight_set [
+      [ 124.422 127.300 119.833 111.183 122.087 123.529 128.233 117.551 106.356 ]
+    ]
+  }
+  {
+    bucket_id -42
+    weight_set [
+      [ 124.422 127.300 119.833 111.183 122.087 123.529 128.233 117.551 106.356 ]
+    ]
+  }
+}
+
+# end crush map
